@@ -1,0 +1,230 @@
+@import "compass";
+@import "variables";
+
+
+@font-face {
+    font-family: 'aleoregular';
+    src: url('../resources/fonts/Aleo-Regular-webfont.eot');
+    src: url('../resources/fonts/Aleo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../resources/fonts/Aleo-Regular-webfont.woff') format('woff'),
+         url('../resources/fonts/Aleo-Regular-webfont.ttf') format('truetype'),
+         url('../resources/fonts/Aleo-Regular-webfont.svg#aleoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aleoitalic';
+    src: url('../resources/fonts/Aleo-Italic-webfont.eot');
+    src: url('../resources/fonts/Aleo-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../resources/fonts/Aleo-Italic-webfont.woff') format('woff'),
+         url('../resources/fonts/Aleo-Italic-webfont.ttf') format('truetype'),
+         url('../resources/fonts/Aleo-Italic-webfont.svg#aleoitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family:$main-font;
+}
+
+.utilities_nav{
+	float:right;
+	padding-top:0.3em;
+	margin-bottom:0;
+
+	li{
+		display:inline-block;
+		padding:0.5em;
+		font-size:0.875em;
+		letter-spacing:-0.01em;
+
+		&.tool{
+			a{
+				color:(darken($grey, 20));
+			}
+		}
+
+		&.special{
+			a{
+				padding:0.5em;
+				background:(lighten($grey, 50));
+				@include border-radius(4px);
+				border:1px solid (lighten($grey, 40));
+				color:(darken($grey, 20));
+
+			}
+		}
+
+		a{
+			color:$grey;
+
+			&:hover{
+				color:$red;
+			}
+		}
+	}
+}
+
+.logo{
+	text-indent:-9999px;
+
+	a{
+		background:url(../img/logo_la_hipotecaria.png) no-repeat center;
+		width:220px;
+		height:65px;
+		display:block;
+	}
+}
+
+header{
+	@include box-shadow(rgba($grey, 0.5) 0px 1px 2px);
+	z-index:999;
+	position:relative;
+
+	.search_bar{
+		margin-top:20px;
+	}
+
+
+}
+
+.relative{
+	position:relative;
+}
+
+.absolute{
+	position:absolute;
+}
+
+input{
+	@include border-radius(4px);
+	border:(lighten($grey, 20)) 1px solid;
+	@include box-shadow(0)
+}
+
+.nav_bar{
+	background:(lighten($grey, 52));
+	margin:0.7em 0 0 0;
+
+	ul{
+		padding:0.5em 0;
+		margin:0;
+	}
+
+	li{
+		display:inline-block;
+		font-family:$third-font;
+		padding:0 0.5em;
+
+		a{
+			color:$grey;
+			font-size:0.92em;
+		}
+	}
+
+	.absolute{
+		right:0;
+	}
+
+	.main-cta{
+		background:#fff;
+		border:1px solid (lighten($grey, 45));
+		padding:0.7em;
+
+		p{
+			color:$grey;
+			font-size:18px;
+			font-weight:lighter;
+			text-align:center;
+			margin:10px 0 0 0;
+
+			span{
+				font-size:14px;
+				font-weight:normal;
+			}
+		}
+
+	}
+}
+
+a.button{
+	font-family:$secondary-font;
+	margin-bottom:0;
+}
+
+.button.tiny{
+	font-size:13px;
+	font-weight:lighter;
+	@include text-shadow(rgba((darken($orange, 10)) , 1) 0px 1px 0px);
+
+}
+
+a.orange{
+	background:$orange;
+	font-size:20px;
+	color:#fff;
+
+	&.hover{
+		background:saturate($orange, 16)
+	}
+}
+
+.banner{
+
+	color:#fff;	
+
+	.orange_bg{
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(left, #db9f40, #e7a158, #df8f56, #d2714e));
+
+		h4{
+			color:(darken($orange, 25))
+		}
+
+		h2{
+			@include text-shadow(1px 1px 0px rgba((darken($orange, 20)), 0.3))
+		}
+	}
+
+	&.carrousel{
+		.slide{
+			height:430px;
+		}
+		
+	}
+
+	h4{
+		font-family:$fourth-font;
+		font-size:20px;
+		@include text-shadow(0px 1px 0px rgba(255, 255, 255, 0.3))
+	}
+
+	h2{
+		font-size:2em;
+		line-height:100%;
+		font-family:$fourth-font;
+		color:#fff;
+		font-weight:lighter;
+	}
+
+	p{
+		font-size:16px;
+		line-height:120%;
+		font-weight:lighter;
+	}
+
+	a{
+		color:#fff;
+		font-family:$secondary-font;
+		font-size:17px;
+		border: 2px solid #fff;
+	}
+}
+
+
+
+
+
+
+
