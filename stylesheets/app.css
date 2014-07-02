@@ -3250,7 +3250,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
   margin: 0;
 }
 /* line 206, ../bower_components/foundation/scss/foundation/components/_dropdown.scss */
-.f-dropdown li:hover, .f-dropdown li:focus {
+.f-dropdown li:hover, .f-dropdown li:focus, .f-dropdown li li.active {
   background: #eeeeee;
 }
 /* line 208, ../bower_components/foundation/scss/foundation/components/_dropdown.scss */
@@ -3285,7 +3285,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
 }
 /* line 241, ../bower_components/foundation/scss/foundation/components/_dropdown.scss */
 .f-dropdown.tiny {
-  max-width: 200px;
+  max-width: 100px;
 }
 /* line 242, ../bower_components/foundation/scss/foundation/components/_dropdown.scss */
 .f-dropdown.small {

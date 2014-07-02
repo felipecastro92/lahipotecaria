@@ -1,6 +1,7 @@
 @import "compass";
 @import "variables";
 @import "_settings";
+@import "fontawesome/_variables.scss";
 
 
 @font-face {
@@ -40,13 +41,18 @@ body{
 
 	li{
 		display:inline-block;
-		padding:0.5em;
+		padding:0.3em 0.5em;
 		font-size:0.875em;
 		letter-spacing:-0.01em;
 
 		&.tool{
 			a{
 				color:(darken($grey, 20));
+			}
+
+			&.sep{
+				border-left:1px solid lighten($grey, 30);	
+				padding-left:0.7em;
 			}
 		}
 
@@ -69,8 +75,19 @@ body{
 		a{
 			color:$grey;
 
-			&:hover{
+			&:hover, &.active{
 				color:$red;
+			}
+		}
+	}
+
+	#drop1{
+		li{
+			display:block;
+
+			&.active{
+				background: lighten($grey, 45);
+				
 			}
 		}
 	}
@@ -84,6 +101,8 @@ body{
 		@include background-size(contain);
 		height:65px;
 		display:block;
+		width: 100%;
+		position: absolute;
 	}
 }
 
@@ -130,6 +149,12 @@ input{
 		a{
 			color:$grey;
 			font-size:0.92em;
+
+			&:hover, &:active{
+				color:$red;
+
+
+			}
 		}
 	}
 
@@ -228,8 +253,27 @@ a.orange{
 	}
 
 	&.carrousel{
+
+		border-bottom:1px solid #fff;
+
+		&:after{
+					content:"";
+					width:90%;
+					position:absolute;
+					height:6px;
+					@include border-radius(100%);
+					@include box-shadow(0px 1px 3px rgba(0, 0, 0, 0.3));
+					bottom:-1px;
+					z-index:-6;
+					margin:0 auto;
+					left:0;
+					right:0;
+				}
+
 		.slide{
 			height:430px;
+
+
 
 			h4{
 				margin-top:5em;
@@ -292,13 +336,12 @@ a.orange{
 		}
 
 		&.big-b:after{
-			content:"";
+			content:"";
+			font-family:FontAwesome;
 			position:absolute;
 			right:1em;
-			background:url(../img/arrow.png);
-			width:7px;
-			height:12px;
-			top:40%;
+			color:#fff;
+			top:33%;
 		}
 
 		&.big-b:hover{
@@ -470,15 +513,22 @@ a.orange{
 		font-size:1em;
 		padding-right: 0.7em;
 		position:relative;
+		height:auto;
+
+		&.right{
+
+			&:after{
+				top:3px;
+			}
+		}
 
 		&:after{
-			content:"";
-			background:url(../img/orange_arrow.png) no-repeat;
-			width:5px;
-			height:9px;
+			content:"";
+			font-family:'FontAwesome';
 			position:absolute;
 			right:0;
-			top:7px;
+			vertical-align:center;
+			top:4px;
 		}
 	}
 }
@@ -520,7 +570,7 @@ a.orange{
 
 	li{
 		line-height:120%;
-		margin:0.5em 0;
+		margin:0.8em 0;
 		list-style-image:url(../img/bullet.png);
 
 		a{
@@ -528,6 +578,17 @@ a.orange{
 
 			&.link-text{
 				color:$red;
+				position:relative;
+				padding-right:0.7em;
+
+				&:after{
+					content:"";
+					font-family:'FontAwesome';
+					position:absolute;
+					right:0;
+					vertical-align:center;
+					top:2px;
+				}
 			}
 		}
 		
@@ -677,13 +738,12 @@ a.orange{
 		position:relative;
 
 		&:after{
-			background:url(../img/arrow-small.png) no-repeat;
-			content:"";
-			width:5px;
-			height:10px;
+			font-family:FontAwesome;
+			color:#fff;
+			content:"";;
 			position:absolute;
 			right:1em;
-			top:0.9em;
+			top:35%;
 
 		}
 	}
@@ -699,9 +759,21 @@ a.orange{
 	}
 }
 
+.upper{
+	text-transform:uppercase;	
+	}
 
 .cta-contact{
 	margin-top:1em;
+
+	.fa{
+		margin-right:0.4em;
+		font-size:0.9em;
+	}
+
+	.upper{
+		font-size:0.7em;	
+	}
 
 
 	.cta-head{
@@ -725,23 +797,51 @@ a.orange{
 		}
 	}
 
+
+
 	.cp-wrap{
 		padding:1em;
 		border:1px solid (lighten($grey,45));
 		border-top:none;
 		color:$grey;
 
+		.p-reg{
+		margin-bottom:1em;
+		}
+
+		&.news{
+			border-top:1px solid (lighten($grey,45));
+
+
+			input{
+				@include border-radius(4px 0px 0px 4px);
+			}
+
+			.orange{
+				background:$orange;
+				color:#fff;
+				border:none;
+				@include border-radius(0px 4px 4px 0px);
+			}
+		}
+
 		h4{
 			font-family:$fourth-font;
 			font-size:1.188em;
 			color:$grey;
 			margin:0;
-			margin-bottom:-0.2em;
+			margin-bottom:0;
 		}
 
 		a{
 			color:$orange;
 			text-decoration:underline;
+		}
+
+		p{
+			margin-bottom:0;
+			line-height:130%;
+			margin-top:0.5em;
 		}
 
 		.tel{
@@ -756,6 +856,12 @@ a.orange{
 				font-size:inherit;
 				margin-top:0.2em;
 			}
+		}
+
+		.place{
+			font-style:italic;
+			margin-bottom:1em;
+			display:block;
 		}
 	}
 }
@@ -864,18 +970,23 @@ footer{
 }
 
 @media #{$medium-only} { 
-	
+
 	.cta-contact{
 		
 		.cp-wrap{
 		border:none;
-	
+			
+			&.news{
+			border:1px solid #e5e6e8;
+			}
 		}
 
 		.border-wrap{
 			border:1px solid (lighten($grey,45));
 			border-top:none;
 		}
+
+
 
 		.row{
 			.row{
@@ -884,6 +995,39 @@ footer{
 				}
 			}	
 		}
+	}
+
+	.banner{
+		&.carrousel{
+			.slide{
+				position:relative;
+
+				height:320px;
+				
+				img.absolute{
+					max-width:115%;
+
+				}
+
+				h4{
+					margin-top:3em;
+				}
+
+				.big-b{
+					font-size:16px;
+				}
+
+				p{
+					font-size:15px;
+				}
+			}
+		}
+	}
+
+	.banner-c{
+		font-size:0.8em;
+		padding-right:6em;
+
 	}
 
 	.slide{

@@ -203,7 +203,7 @@ $f-dropdown-content-padding: rem-calc(20) !default;
   margin: 0;
 
   &:hover,
-  &:focus { background: $f-dropdown-list-hover-bg; }
+  &:focus, li.active { background: $f-dropdown-list-hover-bg; }
 
   a {
     display: block;
@@ -238,7 +238,7 @@ $f-dropdown-content-padding: rem-calc(20) !default;
       &.content { @include dropdown-container(content, $triangle:false); }
 
       // Sizes
-      &.tiny    { max-width: 200px; }
+      &.tiny    { max-width: 100px; }
       &.small   { max-width: 300px; }
       &.medium  { max-width: 500px; }
       &.large   { max-width: 800px; }

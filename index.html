@@ -6,6 +6,7 @@
     <title>La Hipotecaria</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" href="stylesheets/styles.css" />
+    <link rel="stylesheet" href="stylesheets/fontawesome/font-awesome.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700|Varela+Round' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
@@ -28,7 +29,7 @@
             <div class="large-12 columns hide-for-small">
               <ul class="utilities_nav">
                 <li>
-                  <a href="#">Inicio</a>
+                  <a class="active" href="#"><i class="fa fa-home"></i>&nbsp;&nbsp;Inicio</a>
                 </li>
                 <li>
                   <a href="#">Quienes somos</a>
@@ -39,7 +40,7 @@
                 <li>
                   <a href="#">Contáctenos</a>
                 </li>
-                <li class="tool">
+                <li class="tool sep">
                   <a href="#">Hiponet</a>
                 </li>
                 <li class="tool">
@@ -49,11 +50,11 @@
                   <a href="#">Inversionistas</a>
                 </li>
                 <li>
-                  <span>País: </span><a href="#" data-dropdown="drop1">CO</a>
-                    <ul id="drop1" class="f-dropdown" data-dropdown-content>
-                      <li><a href="#">CO</a></li>
-                      <li><a href="#">PA</a></li>
-                      <li><a href="#">SA</a></li>
+                  <span>País: </span><a href="#" data-dropdown="drop1">CO <i class="fa fa-angle-down"></i></a>
+                    <ul id="drop1" class="f-dropdown tiny" data-dropdown-content>
+                      <li class="active"><a href="#">Colombia</a></li>
+                      <li><a href="#">Panamá</a></li>
+                      <li><a href="#">El Salvador</a></li>
                     </ul>
                 </li>
 
@@ -65,8 +66,8 @@
             <div class="small-2 columns show-for-small-only menu-mobile">
               <a class="left-off-canvas-toggle menu-icon" href="#">☰</a>
             </div>
-            <div class="large-3 small-8 columns">
-              <h1 class="logo">
+            <div class="large-3 small-8 medium-4 columns">
+              <h1 class="logo left">
                 <a href="index.html">La Hipotecaria</a>
               </h1>
             </div>
@@ -150,7 +151,7 @@ magna aliqua.</p>
                   <img class="absolute" src="img/slider/foto-1.png">
                 </div>
                 
-                <div class="large-5 medium-6 columns">
+                <div class="large-5 medium-6 columns banner-c">
                   <h4>Diagnóstico en línea</h4>
                   <h2>La vivienda de tus sueños está a tu alcance</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
@@ -299,7 +300,7 @@ magna aliqua.</p>
                     </div>
                     <div class="large-9 medium-9 columns">
                       <p class="date">Mayo 12, 1992</p>
-                      <h4 class="n-title">Título</h4>
+                      <h4 class="n-title">Visitas empresariales</h4>
                       <p class="n-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                       <a href="#" class="link-text red">Ver más</a>
                     </div>
@@ -314,7 +315,7 @@ magna aliqua.</p>
                     </div>
                     <div class="large-9 medium-9 columns">
                       <p class="date">Mayo 12, 1992</p>
-                      <h4 class="n-title">Título</h4>
+                      <h4 class="n-title">Feria en el instituto de cancerología</h4>
                       <p class="n-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                       <a href="#" class="link-text red">Ver más</a>
                     </div>
@@ -329,7 +330,7 @@ magna aliqua.</p>
                     </div>
                     <div class="large-9 medium-9 columns">
                       <p class="date">Mayo 12, 1992</p>
-                      <h4 class="n-title">Título</h4>
+                      <h4 class="n-title">Relanzamiento Nueva Etapa Américas</h4>
                       <p class="n-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                       <a href="#" class="link-text red">Ver más</a>
                     </div>
@@ -382,6 +383,7 @@ magna aliqua.</p>
               </div>
             </div>
             <div class="row">
+              
               <div class="large-12 columns cta-contact">
                 <div class="cta-head medium-text-center large-text-left">
                   <h3>Solicita tu crédito</h3>
@@ -392,23 +394,23 @@ magna aliqua.</p>
                     <div class="row border-wrap no-margin">
                       <div class="large-12 medium-4 columns">
                         <div class="cp-wrap">
-                          <h4>Llamar a un asesor</h4>
+                          <h4><i class="fa fa-phone"></i>&nbsp;Llamar a un asesor</h4>
                           <p class="tel"><span>+571</span> 705 1650</p>
                           <span>De lunes a viernes de 8:00am a 6:00pm</span>
                         </div>
                       </div>
                       <div class="large-12 medium-4 columns">
                         <div class="cp-wrap">
-                          <h4>Chatea con un asesor</h4>
+                          <h4><i class="fa fa-comments"></i>&nbsp;Chatea con un asesor</h4>
                           <span>Inicia el chat <a href="">aquí</a></span>
                         </div>
                       </div>
                       <div class="large-12 medium-4 columns">
                         <div class="cp-wrap">
-                          <h4>Visita nuestras oficinas</h4>
+                          <h4><i class="fa fa-map-marker"></i>Visita nuestras oficinas</h4>
                           <span class="upper">Oficina principal</span>
                           <p class="address">Carrera 13 No. 93-40 Oficina 210</p>
-                          <span>Bogotá, Colombia</span><br>
+                          <span class="place">Bogotá, Colombia</span>
                           <span>Conoce otros puntos <a href="">aquí</a></span>
                         </div>
                       </div>
@@ -416,7 +418,33 @@ magna aliqua.</p>
                   </div>
                 </div>  
               </div>
+
+              <div class="large-12 columns cta-contact">
+                <div class="row">
+                  <div class="large-12 columns">
+                    <div class="row medium-text-center large-text-left">
+                      
+                      <div class="large-12 medium-12 columns">
+                        <div class="cp-wrap news">
+                          <h4><i class="fa fa-envelope"></i>&nbsp;¿Quieres estar en contacto?</h4>
+                          <p class="p-reg">Regístrate ahora y recibe información actualizada y promociones de vivienda.</p>
+                          <div class="row collapse">
+                            <div class="large-10 medium-10 small-10 columns">
+                              <input type="text" placeholder="Escribe tu correo electrónico" />
+                            </div>
+                            <div class="large-2 medium-2 small-2 columns">
+                              <a class="postfix orange"><i class="fa fa-angle-right"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>  
+              </div>
+
             </div>
+
           </div>
         </div>
 
