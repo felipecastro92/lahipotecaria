@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>La Hipotecaria</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" href="stylesheets/styles.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,400italic,700|Varela+Round' rel='stylesheet' type='text/css'>
@@ -62,11 +62,17 @@
 
           </div>
           <div class="row">
-            <div class="large-3 small-3 columns">
+            <div class="small-2 columns show-for-small-only menu-mobile">
+              <a class="left-off-canvas-toggle menu-icon" href="#">☰</a>
+            </div>
+            <div class="large-3 small-8 columns">
               <h1 class="logo">
                 <a href="index.html">La Hipotecaria</a>
               </h1>
             </div>
+            <div class="small-2 columns show-for-small-only">
+              b
+            </div> 
             <div class="large-3 medium-4 columns hide-for-small-only">
               <input type="text" class="search_bar" placeholder="¿Qué estas buscando?" />
             </div> 
@@ -124,7 +130,7 @@
                   <img class="absolute" src="img/slider/foto-1.png">
                 </div>
                 
-                <div class="large-5 medium-6 columns">
+                <div class="large-5 medium-6 columns banner-c">
                   <h4>Diagnóstico en línea</h4>
                   <h2>La vivienda de tus sueños está a tu alcance</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
@@ -136,9 +142,23 @@ magna aliqua.</p>
               </div>
             </div>
 
-            <div class="slide orange">
+            <div class="slide red_bg">
+              <div class="pat"></div>
+              <div class="figure"></div>
               <div class="row">
-                <p>dos</p>
+                <div class="large-7 medium-6 columns">
+                  <img class="absolute" src="img/slider/foto-1.png">
+                </div>
+                
+                <div class="large-5 medium-6 columns">
+                  <h4>Diagnóstico en línea</h4>
+                  <h2>La vivienda de tus sueños está a tu alcance</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+magna aliqua.</p>
+                  <a href="#" class="big-b">Solicitar pre aprobación ahora</a>
+
+                </div>
+                  
               </div>
             </div>
           </div>
@@ -217,9 +237,30 @@ magna aliqua.</p>
           </div>
         </div>
 
-        <div class="row pqr hide-for-small">
+        <div class="mobile-sub-menu show-for-small-only">
+          <div class="row">
+            
+              <ul>
+                <li>
+                  <a href="#">Tiene dudas</a>
+                </li>
+                <li>
+                  <a href="#">Guías y Requerimientos</a>
+                </li>
+                <li>
+                  <a href="#">Conoce nuestro blog</a>
+                </li>
+                <li>
+                  <a href="#">Lo que opinan nuestros clientes</a>
+                </li>
+              </ul>
+            
+          </div>
+        </div>
+
+        <div class="row pqr">
           <div class="large-8 medium-12 columns">
-            <div class="large-12 medium-8 columns">
+            <div class="large-12 medium-8 columns hide-for-small">
               <h6>¿Tienes dudas? Te ayudamos a resolverlas</h6>
               <ul>
                 <li><a href="#">¿Qué proyectos financian ustedes?</a></li>
@@ -231,7 +272,10 @@ magna aliqua.</p>
               </ul>
               <a class="link_text right">Más preguntas frecuentes</a>
             </div>
-            <div class="large-12 medium-4 columns">
+            <div class="large-12 medium-4 columns show-for-large-up">
+              <div class="divider"></div>
+            </div>
+            <div class="large-12 medium-4 columns hide-for-small">
               <h6>Guías y requerimientos</h6>
               <ul>
                 <li><a href="#">Conoce nuestras guías hipotecarias.</a></li>
@@ -240,12 +284,19 @@ magna aliqua.</p>
               </ul>
               <a class="link_text right">Más guías y requerimientos</a>
             </div>
-            <div class="large-12 medium-12 columns">
+            <div class="large-12 columns">
+              <div class="divider hide-for-small"></div>
+            </div>
+            <div class="large-12 medium-12 columns hide-for-small">
               <h6>Últimas noticias</h6>
               <ul class="no-margin">
-                <div class="row">
+                <div class="row noti-w">
                   <li>
-                    <img src="img/noti1.jpg" class="large-3 medium-3 columns">
+                    <div class="large-3 medium-3 columns">
+                      <div class="row">
+                        <img src="img/noti1.jpg">
+                      </div>
+                    </div>
                     <div class="large-9 medium-9 columns">
                       <p class="date">Mayo 12, 1992</p>
                       <h4 class="n-title">Título</h4>
@@ -254,9 +305,13 @@ magna aliqua.</p>
                     </div>
                   </li>
                 </div>
-                <div class="row">
+                <div class="row noti-w">
                   <li>
-                    <img src="img/noti1.jpg" class="large-3 medium-3 columns">
+                    <div class="large-3 medium-3 columns">
+                      <div class="row">
+                        <img src="img/noti1.jpg">
+                      </div>
+                    </div>
                     <div class="large-9 medium-9 columns">
                       <p class="date">Mayo 12, 1992</p>
                       <h4 class="n-title">Título</h4>
@@ -265,9 +320,13 @@ magna aliqua.</p>
                     </div>
                   </li>
                 </div>
-                <div class="row">
+                <div class="row noti-w">
                   <li>
-                    <img src="img/noti1.jpg" class="large-3 medium-3 columns">
+                    <div class="large-3 medium-3 columns">
+                      <div class="row">
+                        <img src="img/noti1.jpg">
+                      </div>
+                    </div>
                     <div class="large-9 medium-9 columns">
                       <p class="date">Mayo 12, 1992</p>
                       <h4 class="n-title">Título</h4>
@@ -277,36 +336,45 @@ magna aliqua.</p>
                   </li>
                 </div>
               </ul>
-              <a href="#" class="link-text right">Visita nuestro blog</a>
+              <a href="#" class="link_text right">Visita nuestro blog</a>
 
             </div> 
           </div>
-          <div class="large-4 medium-12 columns">
-            <h6 class="small-h6">Lo que opinan nuestros clientes</h6>
-            <div class="row">
-              <div class="large-12 medium-6 columns">
-                <cite>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi”</cite>
-                <img src="img/user1.jpg" class="user-pic left" /><span class="name">Andrea Martínez</span><span>Colombia</span>
-              </div>
-             
-              <div class="large-12 medium-6 columns show-for-medium-only">
-                <cite>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</cite>
-                <img src="img/user2.jpg" class="user-pic left" /><span class="name">Andrea Martínez</span><span>Colombia</span>
-              </div>
+          <div class="large-12 columns hide-for-large-up hide-for-landscape">
+              <div class="divider hide-for-small"></div>
             </div>
-            <a href="#" class="link-text right">Conoce más testimonios</a>
-            <div class="row">
-              <div class="large-12 columns">
-                <div class="cta-l banca">
-                  <h4>Te interesa abrir una cuenta</h4>
-                  <p>Descubre los productos financieros que hemos diseñado para ti.</p>
-                  <a href="#" class="">Ir a la banca</a>
+          <div class="large-4 medium-12 columns">
+            <div class="">
+              <h6 class="small-h6 hide-for-small">Lo que opinan nuestros clientes</h6>
+              <div class="row">
+                <div class="large-12 medium-6 columns hide-for-small">
+                  <cite>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi”</cite>
+                  <img src="img/user1.jpg" class="user-pic left" /><span class="name">Andrea Martínez</span><span>Colombia</span>
+                </div>
+               
+                <div class="large-12 medium-6 columns show-for-medium-only">
+                  <cite>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</cite>
+                  <img src="img/user2.jpg" class="user-pic left" /><span class="name">Andrea Martínez</span><span>Colombia</span>
+                </div>
+              </div>
+              <a href="#" class="link_text right hide-for-small">Conoce más testimonios</a>
+              <div class="row">
+                <div class="large-12 columns">
+                  <div class="cta-l banca medium-text-center large-text-left">
+                    <div class="pat"></div>
+                    <div class="figure"></div>
+                    <h4>Te interesa abrir una cuenta</h4>
+                    <p>Descubre los productos financieros que hemos diseñado para ti.</p>
+                    <a href="#" class="">Ir a la banca</a>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="large-12 columns">
-                <div class="cta-l pre-a">
+                <div class="cta-l pre-a medium-text-center large-text-left">
+                  <div class="pat"></div>
+                  <div class="figure"></div>
                   <h4>Pre aprobación de su crédito en pocos pasos</h4>
                   <p>Podrá obtener toda la información que requiera acerca de nuestros productos financieros.</p>
                   <a href="#" class="">Solicitar pre aprobación</a>
@@ -314,183 +382,95 @@ magna aliqua.</p>
               </div>
             </div>
             <div class="row">
-              <div class="large-12 columns">
-                <p>Solicita tu crédito</p>
-                <div class="large-12 medium-4 columns">
-                  Llamar
+              <div class="large-12 columns cta-contact">
+                <div class="cta-head medium-text-center large-text-left">
+                  <h3>Solicita tu crédito</h3>
+                  <p>Ponte en contacto con nosotros</p>
                 </div>
-                <div class="large-12 medium-4 columns">
-                  Chatea
-                </div>
-                <div class="large-12 medium-4 columns">
-                  Visita
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
-
-
-
-        
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="panel">
-              <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-              <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-              <p>Once you've exhausted the fun in this document, you should check out:</p>
-              <div class="row">
-                <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-                <div class="large-4 medium-4 columns">
-                  <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-                </div>
-                <div class="large-4 medium-4 columns">
-                  <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-                </div>        
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="large-8 medium-8 columns">
-            <h5>Here&rsquo;s your basic grid:</h5>
-            <!-- Grid Example -->
-
-            <div class="row">
-              <div class="large-12 columns">
-                <div class="callout panel">
-                  <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-6 medium-6 columns">
-                <div class="callout panel">
-                  <p>Six columns</p>
-                </div>
-              </div>
-              <div class="large-6 medium-6 columns">
-                <div class="callout panel">
-                  <p>Six columns</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="large-4 medium-4 small-4 columns">
-                <div class="callout panel">
-                  <p>Four columns</p>
-                </div>
-              </div>
-              <div class="large-4 medium-4 small-4 columns">
-                <div class="callout panel">
-                  <p>Four columns</p>
-                </div>
-              </div>
-              <div class="large-4 medium-4 small-4 columns">
-                <div class="callout panel">
-                  <p>Four columns</p>
-                </div>
-              </div>
-            </div>
-            
-            <hr />
-                    
-            <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-            <form>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Input Label</label>
-                  <input type="text" placeholder="large-12.columns" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-4 medium-4 columns">
-                  <label>Input Label</label>
-                  <input type="text" placeholder="large-4.columns" />
-                </div>
-                <div class="large-4 medium-4 columns">
-                  <label>Input Label</label>
-                  <input type="text" placeholder="large-4.columns" />
-                </div>
-                <div class="large-4 medium-4 columns">
-                  <div class="row collapse">
-                    <label>Input Label</label>
-                    <div class="small-9 columns">
-                      <input type="text" placeholder="small-9.columns" />
-                    </div>
-                    <div class="small-3 columns">
-                      <span class="postfix">.com</span>
+                <div class="row">
+                  <div class="large-12 columns">
+                    <div class="row border-wrap no-margin">
+                      <div class="large-12 medium-4 columns">
+                        <div class="cp-wrap">
+                          <h4>Llamar a un asesor</h4>
+                          <p class="tel"><span>+571</span> 705 1650</p>
+                          <span>De lunes a viernes de 8:00am a 6:00pm</span>
+                        </div>
+                      </div>
+                      <div class="large-12 medium-4 columns">
+                        <div class="cp-wrap">
+                          <h4>Chatea con un asesor</h4>
+                          <span>Inicia el chat <a href="">aquí</a></span>
+                        </div>
+                      </div>
+                      <div class="large-12 medium-4 columns">
+                        <div class="cp-wrap">
+                          <h4>Visita nuestras oficinas</h4>
+                          <span class="upper">Oficina principal</span>
+                          <p class="address">Carrera 13 No. 93-40 Oficina 210</p>
+                          <span>Bogotá, Colombia</span><br>
+                          <span>Conoce otros puntos <a href="">aquí</a></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </div>  
               </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Select Box</label>
-                  <select>
-                    <option value="husker">Husker</option>
-                    <option value="starbuck">Starbuck</option>
-                    <option value="hotdog">Hot Dog</option>
-                    <option value="apollo">Apollo</option>
-                  </select>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-6 medium-6 columns">
-                  <label>Choose Your Favorite</label>
-                  <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-                  <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-                </div>
-                <div class="large-6 medium-6 columns">
-                  <label>Check these out</label>
-                  <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                  <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label>Textarea Label</label>
-                  <textarea placeholder="small-12.columns"></textarea>
-                </div>
-              </div>
-            </form>
-          </div>     
-
-          <div class="large-4 medium-4 columns">
-            <h5>Try one of these buttons:</h5>
-            <p><a href="#" class="small button">Simple Button</a><br/>
-            <a href="#" class="small radius button">Radius Button</a><br/>
-            <a href="#" class="small round button">Round Button</a><br/>            
-            <a href="#" class="medium success button">Success Btn</a><br/>
-            <a href="#" class="medium alert button">Alert Btn</a><br/>
-            <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-            <div class="panel">
-              <h5>So many components, girl!</h5>
-              <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p>
-              <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
             </div>
           </div>
         </div>
+
+        <footer>
+          <div class="row">
+            <div class="large-3 medium-3 columns">
+              <h2>
+                <a href="index.html">La Hipotecaria Compañía de Financiamiento S.A.</a>
+              </h2>
+            </div>
+            <div class="large-9 medium-9 columns">
+              <nav class="footer_nav right">
+                <ul>
+                  <li><a href="#">Inversionistas</a></li>
+                  <li><a href="#">Plan de referidos</a></li>
+                  <li><a href="#">Testimonios</a></li>
+                  <li><a href="#">Trabaje con nosotros</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="row legal">
+            <div class="large-8 medium-8 columns">
+              <h3>La Hipotecaria Compañía de Financiamiento S.A.</h3>
+              <p>Sede Principal: Carrera 13 No. 93 -40 Oficina 210. Conmutador: (1) 7051650 Bogotá Colombia. Horario de atención: lunes a viernes entre las 8:00 am y las 5:00 pm y Sábados entre las 9:00am y 12md</p>
+            </div>
+            <div class="large-4 medium-4 columns">
+              
+                <div class="large-12 logos-legal"></div>
+            
+            </div>
+          </div>
+          <div class="row">
+            <div class="large-12 columns">
+              <span class="legal-text">Entidad Vigilada por la Superintendencia Financiera de Colombia. <a href="#">Preguntas frecuentes</a> | <a href="#">Términos de Uso</a> | <a href="#">Mapa del Sitio</a></span>
+            </div>
+          </div>
+        </footer>
+
+
+
+
       </div>
     </div>
      
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
     <script>$(document).foundation();</script>
     <script src="js/jquery.bxslider.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        $('.bxslider').bxSlider();
+        $('.bxslider').bxSlider(
+        );
       });
     </script>
   </body>
