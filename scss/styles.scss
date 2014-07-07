@@ -47,6 +47,10 @@
 		.red_bg{
 			background:$red;
 		}
+
+		.blue_bg{
+			background:$blue;
+		}
 	}
 
 }
@@ -233,6 +237,12 @@ input{
 		padding:0.7em;
 		position:relative;
 
+		a{
+			&:hover{
+				background:darken($orange, 10);
+			}	
+		}
+
 		&:after{
 			width:95%;
 			background:url(../img/shadow-cta.png) no-repeat;
@@ -282,7 +292,133 @@ a.orange{
 	}
 }
 
+.breadcrumb{
+	color:#fff;
+	margin-top:1.5em;
+	margin-left:0;
+
+
+	li{
+		display:inline-block;
+		font-size:0.813em;
+		padding:0 0.2em;
+		font-weight:normal;
+
+		a{
+			font-size:inherit;
+			font-weight:lighter;
+		}
+	}
+}
+
+.pat{
+		width:100%;
+		height:100%;
+		position:absolute;
+		background:url(../img/pat_banner.png);
+		top:0;
+		left:0;
+	}
+
+.figure{
+		width:100%;
+		height:100%;
+		position:absolute;
+		background:url(../img/figure.png) no-repeat;
+		top:0;
+		left:0;
+}
+
+.white_wrapper{
+	background:#fff;
+	@include border-radius(5px 5px 0px 0px);
+	margin:-4.5em auto 0;
+	position:relative;
+	max-width:65.5rem;
+	padding-top:2.5em;
+	position:relative;
+
+	&:after, &:before{
+		position:absolute;
+		content:"";
+		width:3px;
+		height:15em;
+		background:#fff;
+		@include box-shadow(0px 0px 6px rgba(0, 0, 0, 1));
+		@include border-radius(100px);
+		top:0;
+		z-index:-1;
+
+	}
+
+	&:after{
+	 	left:3px;
+	 	@include rotate(-1deg);
+	 }
+
+
+	 &:before{
+	 	right:3px;
+	 	@include rotate(1deg);
+	 }
+
+
+
+	form{
+
+		label{
+			color:$grey;
+			font-family:$fourth-font;
+			font-size:0.938em
+
+
+		}
+
+		input, select{
+			padding:1.5em 0.5em;
+			@include border-radius(4px);
+		}
+
+		.submit{
+			background:$orange;
+			font-family:$main-font;
+			@include text-shadow(1px 1px 1px darken($orange,20));
+			font-size:1em;
+
+			&:hover{
+				background:darken($orange, 10);
+			}
+		}
+
+	}
+
+	h2{
+		color:$red;
+		font-family:$fourth-font;
+		font-size:1.750em;
+	}
+
+	p{	
+		font-size:0.875em;
+		color:$grey;
+		line-height:130%;
+	}
+
+	h3{
+		color:$red;
+		font-family:$fourth-font;
+		font-size:1.50em;
+	}
+}
+
 .banner{
+
+	&.inner_page{
+		position:relative;
+		.red_bg{
+			min-height:142px;
+		}
+	}
 
 	color:#fff;	
 	position:relative;
@@ -298,6 +434,22 @@ a.orange{
 
 		h2{
 			@include text-shadow(1px 1px 0px rgba((darken($orange, 20)), 0.3))
+		}
+
+		
+	}
+
+	.blue_bg{
+		$experimental-support-for-svg: true;
+		@include background-image(linear-gradient(left,#537885, #527784, #527b8a, #507082, #4f677d));
+
+		h4{
+			color:(darken($blue, 25));
+			
+		}
+
+		h2{
+			@include text-shadow(1px 1px 0px rgba((darken($blue, 20)), 0.3))
 		}
 
 		
@@ -352,19 +504,7 @@ a.orange{
 	}
 
 
-	.pat{
-		width:100%;
-		height:100%;
-		position:absolute;
-		background:url(../img/pat_banner.png);
-	}
-
-	.figure{
-		width:100%;
-		height:100%;
-		position:absolute;
-		background:url(../img/figure.png) no-repeat;
-	}
+	
 
 	h4{
 		font-family:$fourth-font;
@@ -746,6 +886,10 @@ a.orange{
 
 }
 
+.zindex{
+	z-index:9999;
+}
+
 .lt-ie9{
 	.cta-l{
 		&.banca{
@@ -753,6 +897,82 @@ a.orange{
 		}
 		&.pre-a{
 			background:$orange;
+		}
+	}
+}
+
+.cta_large{
+
+	color:#fff;
+	text-align:center;
+	padding:2em 1em 3em 1em;
+	margin-top:3em;
+
+
+	&.orange{
+		@include background-image(linear-gradient(left,#fca945, #fda750, #f99e5a, #f58e58, #f37c52));
+		@include text-shadow(1px 1px 0px rgba((darken($orange, 20)), 0.3))
+	}
+
+	h4{
+		color:#fff;
+		font-family:$fourth-font;
+		font-size:1.2em;
+	}
+
+	p{
+		color:#fff;
+		margin-bottom:2em;
+	}
+
+	a{
+		color:#fff;
+		border: 2px solid #fff;
+		padding: 0.8em 2em 0.8em 1.3em;
+		@include border-radius(6px);
+		position:relative;
+
+
+			&:after{
+			content:"";
+			font-family:FontAwesome;
+			position:absolute;
+			right:1em;
+			color:#fff;
+			top:33%;
+			}
+
+			&:hover{
+				background:adjust_hue(desaturate(darken($orange, 0), 17), 0);
+			}
+		
+
+	}
+
+
+}
+
+.result{
+	.calc-label{
+		font-family:$fourth-font;
+		font-size:1em;
+		margin:1.5em 0 0 0;
+	}
+
+	&.padd{
+		padding-bottom:2em;
+	}
+
+	.link_text{
+		margin-top:1em;
+	}
+
+	span{
+		&.number{
+			font-size:2.375em;
+			color:$grey;
+			margin-bottom:0.5em;
+			display:block;
 		}
 	}
 }
@@ -784,6 +1004,7 @@ a.orange{
 		font-size:0.875em;
 		line-height:120%;
 		font-weight:lighter;
+		color:#fff;
 	}
 
 	.pat{
@@ -1061,6 +1282,7 @@ footer{
 	margin-bottom:3em;
 	margin-top:0.5em;
 
+
 	&:after{
 		content:"";
 		width:98%;
@@ -1325,6 +1547,10 @@ footer{
 			}
 
 		}
+	}
+
+	.result{
+		text-align:center;
 	}
 
 	.grey{
