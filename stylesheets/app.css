@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* line 329, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.2.3/";
@@ -1652,7 +1651,7 @@ select {
 /* line 160, ../bower_components/foundation/scss/foundation/components/_accordion.scss */
 .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
   display: block;
-  background: #f8f8f9;
+  background: #f5f6f6;
 }
 
 /* line 110, ../bower_components/foundation/scss/foundation/components/_alert-boxes.scss */
