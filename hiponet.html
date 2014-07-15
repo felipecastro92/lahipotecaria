@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Banca privada | La Hipotecaria</title>
+    <title>Hiponet | La Hipotecaria</title>
     <!--[if lt IE 9]>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <![endif]-->
@@ -42,6 +42,8 @@
               <li><a href="#">Ayuda</a></li>
               <li class="upper show-for-small-only">Más opciones</li>
               <li class="show-for-small-only"><a href="#">Quienes somos</a></li>
+              <li class="show-for-small-only"><a href="#">Educación Financiera</a></li>
+              <li class="show-for-small-only"><a href="#">Blog</a></li>
               <li class="show-for-small-only"><a href="#">Contáctanos</a></li>
               <li class="show-for-small-only"><a href="#">Hiponet</a></li>
               <li class="show-for-small-only"><a href="#">Seguinet</a></li>
@@ -82,7 +84,7 @@
                   <a href="#">Contáctenos</a>
                 </li>
                 <li class="tool sep">
-                  <a href="#">Hiponet</a>
+                  <a class="active" href="#">Hiponet</a>
                 </li>
                 <li class="tool">
                   <a href="#">Seguinet</a>
@@ -135,7 +137,7 @@
                       <a href="#">Viviendas que financiamos</a>
                     </li>
                     <li>
-                      <a class="active" href="#">Banca privada</a>
+                      <a href="#">Banca privada</a>
                     </li>
                     <li>
                       <a href="#">Ayuda</a>
@@ -165,19 +167,27 @@
         <div class="banner carrousel">
           
 
-            <div class="slide blue_bg inner_banner">
+            <div class="slide red_bg inner_banner hiponet">
               <div class="pat"></div>
               <div class="figure"></div>
               <div class="row">
-                <div class="large-6 medium-6 columns">
-                  <img class="absolute" src="img/slider/foto-banca.png">
-                </div>
-                
-                <div class="large-6 medium-6 columns banner-c right">
-                  <h4>Banca privada</h4>
-                  <h2>Encuentra los productos financieros que necesitas para alcanzar tus metas</h2>
+                <div class="large-7 medium-8 columns">
+                  <h4>Hiponet</h4>
+                  <h2>Realiza aquí el seguimiento de tu préstamo hipotecario</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
 magna aliqua.</p>
+                </div>
+                
+                <div class="large-4 medium-4 columns banner-c right">
+                  <form>
+                    <label>Usuario:
+                    <input type="text" placeholder="Ingresa tu usuario" />
+                    </label>
+                    <label>Contraseña:<a class="right" href="#">¿Olvidaste tu contraseña?</a>
+                    <input type="password" placeholder="Ingresa su contraseña" />
+                    </label>
+                    <input type="submit" value="Ingresar" class="right submit" />
+                  </form>
                   
 
                 </div>
@@ -199,65 +209,48 @@ magna aliqua.</p>
 
 
         <div class="content">
+       
 
-        <div class="row pqr product">
+        <div class="row pqr product viv">
           <div class="large-8 medium-12 columns">
-            <div class="large-12 columns">
-              <p class="intro_section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque malesuada euismod tempus. Proin vestibulum massa metus, ac scelerisque nulla porttitor eu. Integer eu nisl nisl. Nullam pretium elit vel lectus ultrices, ut viverra nulla luctus. Cras et ante adipiscing, euismod sapien eget</p>
-            </div>
-            <div class="large-12 columns">
-              <h6>Conoce nuestros productos de Banca Privada</h6>
-            </div>
+            
+
+            <div class="row">
             <div class="large-6 medium-6 columns">
-              <div class="icon"></div>
-              <h3 class="product_name">Cuentas de ahorro</h3>
-              <p class="p-center">Nunc eleifend, felis eget rhoncus consequat, justo risus gravida magna, sit amet egestas lorem nisi id lorem. Integer quis arcu at sapien hendrerit vehicula. Integer ac diam eget felis luctus pulvinar sed quis enim. Mauris fermentum risus sit amet mi scelerisque mollis. </p>
-              <a href="#" class="link_text">Ampliar información</a>
+              <h2 class="product_name">¿Para qué sirve hiponet?</h2>
+              <p class="intro-h">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+              <p>Donec ac urna id urna bibendum blandit. Aliquam erat volutpat. Etiam vel enim non sem tristique blandit ac vitae arcu. Nulla nec euismod augue, et lacinia neque. </p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna </li>
+                <li>Aliqua. Ut enim ad minim veniam, quis nostrud exercitation </li>
+                <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. </li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+              </ul>
             </div>
 
             <div class="large-6 medium-6 columns">
-              <div class="icon dpf"></div>
-              <h3 class="product_name">Depósitos a plazo fijo</h3>
-              <p class="p-center">Nunc eleifend, felis eget rhoncus consequat, justo risus gravida magna, sit amet egestas lorem nisi id lorem. Integer quis arcu at sapien hendrerit vehicula. Integer ac diam eget felis luctus pulvinar sed quis enim. Mauris fermentum risus sit amet mi scelerisque mollis. </p>
-              <a href="#" class="link_text">Ampliar información</a>
+              <h2 class="product_name">¿Para qué sirve hiponet?</h2>
+              <p class="intro-h">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna </p>
+              <p>Donec ac urna id urna bibendum blandit. Aliquam erat volutpat. Etiam vel enim non sem tristique blandit ac vitae arcu. Nulla nec euismod augue, et lacinia neque. </p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
+                <li>Sed do eiusmod tempor incididunt ut labore et dolore magna </li>
+                <li>Aliqua. Ut enim ad minim veniam, quis nostrud exercitation </li>
+              </ul>
             </div>
 
-            <div class="large-6 medium-6 columns">
-              <div class="icon ac"></div>
-              <h3 class="product_name">Apertura de cuentas</h3>
-              <p class="p-center">Nunc eleifend, felis eget rhoncus consequat, justo risus gravida magna, sit amet egestas lorem nisi id lorem. Integer quis arcu at sapien hendrerit vehicula. Integer ac diam eget felis luctus pulvinar sed quis enim. Mauris fermentum risus sit amet mi scelerisque mollis. </p>
-              <a href="#" class="link_text">Ampliar información</a>
-            </div>
+          </div>
 
-            <div class="large-6 medium-6 columns">
-              <div class="icon tsb"></div>
-              <h3 class="product_name">Tarifa de Servicio bancario</h3>
-              <p class="p-center">Nunc eleifend, felis eget rhoncus consequat, justo risus gravida magna, sit amet egestas lorem nisi id lorem. Integer quis arcu at sapien hendrerit vehicula. Integer ac diam eget felis luctus pulvinar sed quis enim. Mauris fermentum risus sit amet mi scelerisque mollis. </p>
-              <a href="#" class="link_text">Ampliar información</a>
-            </div>
             
           </div>
 
         
 
           <div class="large-4 medium-12 columns">
-            <div>
-             
-              <div class="row">
-                <div class="large-12 columns">
-                  <div class="cta-l banca medium-text-center large-text-left">
-                    <div class="pat"></div>
-                    <div class="figure"></div>
-                    <h4>Consulte un oficial de cuenta</h4>
-                    <p>Podrá obtener toda la información que requiera acerca de nuestros productos financieros</p>
-                    <a href="#" class="">Contactar ahora</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
             <div class="row">
-              
               <div class="large-12 columns cta-contact">
                 <div class="cta-head medium-text-center large-text-left">
                   <h3>Solicita tu crédito</h3>
@@ -293,30 +286,6 @@ magna aliqua.</p>
                 </div>  
               </div>
 
-              <div class="large-12 columns cta-contact">
-                <div class="row">
-                  <div class="large-12 columns">
-                    <div class="row medium-text-center large-text-left">
-                      
-                      <div class="large-12 medium-12 columns">
-                        <div class="cp-wrap news">
-                          <h4><i class="fa fa-envelope"></i>&nbsp;¿Quieres estar en contacto?</h4>
-                          <p class="p-reg">Regístrate ahora y recibe información actualizada y promociones de vivienda.</p>
-                          <div class="row collapse">
-                            <div class="large-10 medium-10 small-10 columns">
-                              <input type="text" placeholder="Escribe tu correo electrónico" />
-                            </div>
-                            <div class="large-2 medium-2 small-2 columns">
-                              <a class="postfix orange"><i class="fa fa-angle-right"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>  
-              </div>
-
               <div class="large-12 columns cta-contact social">
                 <div class="row">
                   <div class="large-12 columns">
@@ -338,9 +307,6 @@ magna aliqua.</p>
                   </div>
                 </div>  
               </div>
-
-            </div>
-
           </div>
         </div>
       </div>

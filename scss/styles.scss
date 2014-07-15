@@ -30,6 +30,17 @@
 	@include transition(all 300ms ease-out)
 }
 
+.vigilado{
+
+	img{
+		max-width:25px;
+		position:absolute;
+		left:-30px;
+		top:30px;
+	}
+
+}
+
 .accordion .accordion-navigation.active > a, .accordion dd.active > a{
 		background: lighten($grey, 50);
 		border-left:solid $orange 2px; 
@@ -136,9 +147,83 @@ dl{
 
 .content{
 	margin-top:3em;
+
+	&.diag{
+		.icon{
+			width:130px;
+			height:130px;
+			margin:0 auto;
+			background:url(../img/icon_bp.png);
+
+			&.step1{
+				background-position:-1050px;
+			}
+
+			&.step2{
+				background-position:-1180px;
+			}
+
+			&.step3{
+				background-position:-1310px;
+			}
+
+			&.step4{
+				background-position:-1440px;
+			}
+		}
+
+
+
+		p.step{
+			text-align:center;
+			font-family:$fourth-font;
+			color:$grey;
+			font-size:1.1em;
+			line-height:130%;
+			padding:0 0.5em;
+
+			span{
+				color:$red;
+			}
+		}
+	}
 }
 
 .lt-ie9{
+
+	.banca.cta-l a{
+		margin-top:1em;
+		display:block;
+	}
+
+	.pre-a.cta-l a{
+		margin-top:1em;
+		display:block;
+	}
+
+	.nav_bar{
+		margin-top:3em;
+		.main-cta{
+			position:absolute;
+			.button{
+				font-size:13px;
+				padding-left:1em;
+				padding-right:1em;
+			}
+		}
+	}
+
+	footer h2 a{
+		background-image:url(../img/logo-footer.png);
+	}
+
+	.show-for-small-only{
+			display:none;
+		}
+
+	.logo a{
+		background-image:url(../img/logo_hipotecaria.png);
+	}
 
 	.row{
 		max-width:960px;
@@ -785,11 +870,54 @@ a.orange{
 
 			&.inner_banner{
 				height:325px;
-				
+
+
+
+				h4{
+					margin-top:4em;
+				}			
 
 
 				h2{
 					font-size:1.6em;
+				}
+
+				form{
+					margin-top:5em;
+
+					label{
+						color:#fff;
+						font-family:$fourth-font;
+						font-size:1em;
+					}
+
+					a{
+						font-size:0.8em;
+						color:lighten($red, 10);
+
+						&:hover{
+							color:#fff;
+						}
+					}
+
+
+					input{
+
+						&.submit{
+							border:#fff 1px solid;
+							background:none;
+							color:#fff;
+							position:relative;
+							padding:0.7em 1em;
+							font-size:0.9em;
+
+							&:hover{
+								background:darken($red, 20);
+
+							}
+
+						}
+					}
 				}
 			}
 
@@ -1070,10 +1198,25 @@ a.orange{
 				@include box-shadow(0px 0px 4px rgba(0, 0, 0, 0.2));
 				border:#fff 1px solid;
 
+				
+
 				&.w{
 					width:100%;
 				}
 			}
+
+			.intro-h{
+				color:darken($grey, 10);
+				font-weight:700;
+				font-family:$fourth-font;
+			}
+
+			h2{
+					color:$red;
+					font-family:$fourth-font;
+					font-size:1.5em;
+					text-align:left;
+				}
 
 			.offer-v{
 				background:#f5f5f2;
@@ -1225,6 +1368,7 @@ a.orange{
 			color:$grey;
 			font-size:0.875em;
 			text-align:left;
+			line-height:130%;
 		}
 
 		h3.product_name{
@@ -1396,6 +1540,19 @@ a.orange{
 	text-align:center;
 	padding:2em 1em 3em 1em;
 	margin-top:3em;
+
+	&.cta-d{
+		a{
+			margin-top:1em;
+			font-size:1em;
+		}
+
+		h4{
+			font-size:1.4em;
+			margin-top:1em;
+			margin-right:1em;
+		}
+	} 
 
 
 	&.orange{
@@ -1815,7 +1972,14 @@ footer{
 @media #{$medium-only} { 
 
 
+	.utilities_nav li{
+		padding:0.3em;
+	}
 
+	footer .footer_nav li{
+		padding:0 3em;
+		font-size:0.95	em;
+	}
 	.cta-contact{
 
 		
@@ -1926,9 +2090,71 @@ footer{
 
 	}
 
+	.cta_large{
+
+		&.cta-d{
+			a{
+				font-size:1.2em;
+			}
+
+			h4{
+				font-size:1.2em;
+				text-align:center;
+				margin-top:1em;
+			}
+		} 
+	}
+
+	footer{
+		.large-8.medium-8{
+			padding-left:2.5em;
+		}
+	}
+
+	.vigilado{
+
+		img{
+			max-width:25px;
+			position:absolute;
+			left:0px;
+			top:50px;
+			
+		}
+	}
+
 }
 
 @media #{$small-only} {
+
+
+
+	.cta_large{
+
+		padding-bottom:2em;
+
+		&.cta-d{
+			a{
+				
+				display:block;
+				float:none !important;
+				font-size:1.2em;
+			}
+
+			h4{
+				font-size:1.2em;
+				margin-top:1em;
+			}
+		} 
+	}
+
+	.inner_banner{
+		img.absolute{
+			width:80%;
+			margin:0 auto;
+			left:0;
+			right:0;
+		}
+	}
 
 	#map{
 	height:300px;
@@ -1992,6 +2218,42 @@ footer{
 
 				&.inner_banner{
 					height:485px;
+
+					&.hiponet{
+						height:540px;
+
+						h2{
+							color:#fff;
+							@include text-shadow(1px 1px 0px rgba((darken($red, 20)), 0.3))
+
+						}
+
+						p{
+							color:#fff;
+							@include text-shadow(1px 1px 0px rgba((darken($red, 20)), 0.3))
+						}
+
+						form{
+							margin-top:2em;
+
+							label{
+								color:$red;
+							}
+
+							a{
+								background:none;
+								color:lighten($red, 20);
+							}
+
+							input{
+								&.submit{
+									background:$red;
+									display:block;
+									width:100%;
+								}
+							}
+						}
+					}
 				}
 
 				&.red_bg{
@@ -2244,6 +2506,25 @@ footer{
 		}
 	}
 
+	.vigilado{
+
+		img{
+			max-width:30px;
+			position:absolute;
+			left:10px;
+			top:50px;
+			
+		}
+	}
+
+}
+
+@media #{$large-up}{
+	.inner_banner{
+		img.absolute{
+			left:4em;
+		}
+	}
 }
 
 
